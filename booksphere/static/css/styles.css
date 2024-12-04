@@ -1,0 +1,124 @@
+/* Establecer fuente y fondo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F3EACF; /* Fondo beige */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Estilo para el encabezado */
+h1 {
+    font-size: 32px;
+    color: #C57733; /* Color marrón cálido */
+    margin-bottom: 20px;
+}
+
+/* Estilo para el botón de descarga */
+.btn-download {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #C57733;  /* Color marrón cálido */
+    color: #EDDCAA;  /* Color crema */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #ad5d16; /* Tono más oscuro de marrón */
+}
+
+/* Estilo para la imagen */
+img {
+    width: 200px;  
+    height: auto;
+    margin-bottom: 20px;  /* Separación entre el logo y el texto */
+}
+
+.texto{
+    color:#ad5d16
+}
+
+/* Estilo para el párrafo */
+p {
+    font-size: 18px;
+    color: #ffffff;  /* Color marrón cálido */
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+    img {
+        width: 150px;  /* Reducción del tamaño del logo en móviles */
+    }
+
+    h1 {
+        font-size: 28px;  /* Tamaño de fuente más pequeño */
+    }
+
+    p {
+        font-size: 16px;  /* Texto más pequeño en móviles */
+    }
+
+    .btn-download {
+        font-size: 16px;  /* Tamaño más pequeño del botón en móviles */
+        padding: 10px 20px;  /* Ajuste de tamaño de botón en móviles */
+    }
+}
+
+.container-2{
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;   
+}
+
+/* Botón de Sobre Nosotros */
+.btn-sobrenosotros{
+    font-size: 32px;
+    color: #C57733;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-sobrenosotros:hover {
+    color: #ad5d16;
+    transform: scale(1.05);
+}
+
+/* Contenedor del contenido de Sobre Nosotros */
+.about-us-content {
+    display: none; /* Inicialmente oculto */
+    opacity: 0;
+    transform: translateY(20px); /* Se inicia desplazado hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    padding: 20px;
+    background-color: #C57733;
+    color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 600px; /* Limitar el ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+    text-align: left; /* Alinear el texto a la izquierda */
+    width: 100%; /* Permitir que ocupe el 100% del espacio disponible hasta el máximo */
+}
+
+/* Efecto de animación cuando se muestra el contenido */
+.about-us-content.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Vuelve a su posición original */
+}
+
+/* Para la animación de clic */
+.about-us-btn:active {
+    transform: scale(0.98); /* Efecto de reducción al hacer clic */
+}

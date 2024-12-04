@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksphere</title>
+    
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1>Bienvenido a Booksphere</h1>
+        <img src="{% static 'img/logo.png' %}" alt="logo-booksphere">
+        <p class="texto">¡Descarga nuestra aplicación para llevar tu bitácora de libros donde quieras!</p>
+
+        <a href="{% static 'apk/booksphere.apk' %}" id="linkDescarga" class="btn-download" style="display:none;">Descargar APK</a>
+        <div id="qrCode" style="display:none;">
+            <img src="{% static 'img/qr.png' %}" alt="QR para descargar">
+        </div>
+    </div>
+
+     <div class="container-2">
+        <h1 onclick="mostrarAcercaDe()" class="btn-sobrenosotros">Sobre Nosotros</h1>
+
+        <div id="acerca-de-nosotros" class="about-us-content">
+            <p>Somos una empresa dedicada a ayudarte a gestionar tu bitácora de libros. Nuestra misión es proporcionarte una herramienta útil y fácil de usar para llevar un registro de tus lecturas, reseñas y libros favoritos.</p>
+        </div>
+
+    </div>
+    
+
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+
+</html>
